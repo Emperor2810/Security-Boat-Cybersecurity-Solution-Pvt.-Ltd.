@@ -1,0 +1,96 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Seat Selection</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Movie Ticket Seat Selection</h1>
+    <div class="screen">SCREEN</div>
+    <div class="seats">
+        <!-- Seat grid -->
+        <div class="row">
+            <div class="seat" data-seat-number="A1"></div>
+            <div class="seat" data-seat-number="A2"></div>
+            <div class="seat" data-seat-number="A3"></div>
+            <div class="seat" data-seat-number="A4"></div>
+            <div class="seat" data-seat-number="A5"></div>
+            <div class="seat" data-seat-number="A6"></div>
+            <div class="seat" data-seat-number="A7"></div>
+            <div class="seat" data-seat-number="A8"></div>
+            <div class="seat" data-seat-number="A9"></div>
+        </div>
+        <div class="row">
+            <div class="seat" data-seat-number="B1"></div>
+            <div class="seat" data-seat-number="B2"></div>
+            <div class="seat" data-seat-number="B3"></div>
+            <div class="seat" data-seat-number="B4"></div>
+            <div class="seat" data-seat-number="B5"></div>
+            <div class="seat" data-seat-number="B6"></div>
+            <div class="seat" data-seat-number="B7"></div>
+            <div class="seat" data-seat-number="B8"></div>
+            <div class="seat" data-seat-number="B9"></div>
+        </div>
+        <div class="row">
+            <div class="seat" data-seat-number="C1"></div>
+            <div class="seat" data-seat-number="C2"></div>
+            <div class="seat" data-seat-number="C3"></div>
+            <div class="seat" data-seat-number="C4"></div>
+            <div class="seat" data-seat-number="C5"></div>
+            <div class="seat" data-seat-number="C6"></div>
+            <div class="seat" data-seat-number="C7"></div>
+            <div class="seat" data-seat-number="C8"></div>
+            <div class="seat" data-seat-number="C9"></div>
+        </div>
+    </div>
+
+</div>
+
+<div class="booking-form">
+    <h2>Booking Details</h2>
+    <form action="booking.php" method="post" id="bookingForm">
+        <div class="form-group">
+            <label for="movieName">Movie Name:</label>
+            <input type="text" id="movieName" name="moviename" readonly required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number" name="mobile" pattern="[0-9]{10}" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="bookingdate">Booking Date:</label>
+            <input type="date" id="bookingdate" name="date" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="selectedSeats">Selected Seats:</label>
+            <input type="text" id="selectedSeats" name="seats" readonly required>
+        </div>
+    
+        <div class="form-group">
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" name="amount" readonly required>
+        </div>
+        
+    
+        <button type="submit">Click to Pay</button>
+        <input type="hidden" id="posterUrl" name="posterurl" value="https://example.com/posters/movietitle.jpg">
+    </form>
+</div>
+<script src="booking.js"></script>
+
+</body>
+</html>

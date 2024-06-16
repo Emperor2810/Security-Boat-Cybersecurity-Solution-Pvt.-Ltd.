@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+    
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background:url(assets/bg.jpg)
+}
+nav {
+        max-width: 70vw;
+        justify-content: space-between;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        height: 100px;
+}
+    
+nav img {
+        color: red;
+        width: 160px;
+        position: relative;
+        z-index: 10;
+        margin-left: -180px;
+}
+label{
+    color: #929292;
+}
+form{
+    padding: 35px;
+}
+.container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 20px;
+    background: transparent;
+    background-color: #ffffffad;
+    border: 1px solid #3231318a;
+    border-radius: 4px;
+}
+    
+h1 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #ff0000;
+}  
+input[type="email"],
+input[type="password"] {
+    background-color: #2e2e2e;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #2e2e2e;
+    border-radius: 4px;
+    color: #ffffff;
+}
+    
+button[type="submit"] {
+    width: 100%;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+    
+button[type="submit"]:hover {
+    background-color: #c80708;
+}
+    
+.remember {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.rem{
+    margin-left: -130px;
+}  
+.remember input[type="checkbox"] {
+    margin-right: 10px;
+}
+    
+.signup {
+    text-align: center;
+    margin-top: 30px;
+    color: #ff1b1b;
+}
+    
+.signup a {
+    color: #ffffff;
+    text-decoration: none;
+}
+    
+.signup a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 776px){
+    .rem{
+        margin-left: -50px;
+    } 
+    nav img {
+        margin-left: -40px;
+        width: 100px;
+}
+}
