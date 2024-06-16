@@ -1,0 +1,29 @@
+As requested, I have created the database and tables for our project using XAMPP:
+
+Database Name: magicmovie
+
+Tables Created:
+
+Table form SQL Query:
+
+sql
+Copy code
+CREATE TABLE form (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    number VARCHAR(20) NOT NULL,
+    password VARCHAR(100) NOT NULL
+);
+Table customer SQL Query:
+
+sql
+Copy code
+CREATE TABLE customer (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    moviename VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    date DATE NOT NULL,
+    seats INT NOT NULL,
+    amount DECIMAL(10,2) NOT NULL
+);
